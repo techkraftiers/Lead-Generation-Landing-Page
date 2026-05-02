@@ -27,14 +27,6 @@ A modern and responsive **Lead Generation Landing Page** designed for digital ma
 - **Google Fonts** – Typography
 
 
-## 📂 Project Structure
-📁 project-folder
-│── index.html
-│── style.css
-│── script.js
-│── images/
-
-
 ## ⚙️ How It Works
 
 - Users land on the page and explore services
@@ -55,7 +47,7 @@ A modern and responsive **Lead Generation Landing Page** designed for digital ma
 - Run the project:
 - Open index.html in your browser
 
-##📌 Important Note
+## 📌 Important Note
 ⚠️ Update this line in script.js with your Google Apps Script URL:
 
 fetch("YOUR_GOOGLE_SCRIPT_URL", {
