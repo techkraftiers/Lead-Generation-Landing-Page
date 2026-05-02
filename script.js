@@ -156,3 +156,29 @@ if (form) {
         });
     });
 }
+
+// form validation
+document.getElementById('inquire-form').addEventListener('submit', function(event) {
+    let isValid = true;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const budget = document.getElementById('monthlyBudget').value;
+
+    // 1. Check Phone Format (Simple 10-digit check)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        isValid = false;
+    }
+
+    // 2. Check if Budget is selected
+    if (budget === "") {
+        alert("Please select your monthly budget.");
+        isValid = false;
+    }
+
+    // If any check fails, stop the form from submitting/storing
+    if (!isValid) {
+        event.preventDefault();
+    }
+});
